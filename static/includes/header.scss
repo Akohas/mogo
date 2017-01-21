@@ -1,0 +1,104 @@
+
+.header{
+	background:  
+		linear-gradient(to bottom, rgba(244,139,131,0.9) 0%,rgba(252,227,138,0.9) 100%),
+		url("../../img/header.png") no-repeat;
+	background-size: 100% 100%;
+	padding-bottom: 66px;
+	&__container{
+		@include clearfix();
+	}
+	&__logo{
+		font-size: 30px;
+		font-weight: 700;
+		font-family: $montserrat;
+		color: #fff;
+		padding-top: 23px;
+		float: left;
+		
+	}
+	&__nav{
+		float: right;
+		margin-top: 32px;
+ 
+	}
+	&__nav-item{
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-family: $montserrat;
+		color: #fff;
+		text-decoration: none;
+		font-weight: 400;
+		margin-left: 55px;
+		padding-bottom: 9px;
+		border-bottom: solid rgba(0, 0, 0, 0) 3px;
+		&:first-child{
+			margin-left: 0px;
+		}
+		&:hover{
+			border-bottom: solid #fce38a 3px;
+		}
+	}
+ 
+	&__nav-basket svg{
+		height: 14px;
+		width: 18px;
+		margin-left: 47px;
+	}
+
+	&__nav-search svg{
+		height: 18px;
+		width: 18px;
+		margin-left: 34px;
+    margin-bottom: -4px;
+	}
+ 
+	&__label{
+		text-align: center;
+		margin: 0  auto;
+	}
+	&__label-creative{
+		font-size: 72px;
+		font-family: $kaushan;
+		color: #fff;
+		margin-top: 157px;
+		margin-bottom: 37px;
+	}
+	&__label-welcome{
+		font-size: 145px;
+		line-height: 140px;
+		font-family: $montserrat;
+		text-transform: uppercase;
+		font-weight: 700;
+		color: #fff;
+	}
+	&__button{
+		width: 160px;
+		height: 40px;
+		border: solid #fff 3px;
+		color: #fff;
+		font-family: $montserrat;
+		font-size: 14px;
+		text-transform: uppercase;
+		font-weight: 700;
+		margin: 0 auto;
+		position: relative;
+		padding-top: 10px;
+		text-align: center; 
+		margin-top: 108px;
+		&::before{
+			content:"";
+			width: 60px;
+			height: 3px;
+			background-color: #fff;
+			position: absolute;
+			top: -55px;
+			left: 45px;
+
+		}
+	}
+	
+
+	
+ }
