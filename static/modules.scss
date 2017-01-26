@@ -1,0 +1,126 @@
+
+@import 'includes/owl-carousel/owl.carousel';
+@import 'includes/owl-carousel/owl.theme.default';
+
+@import 'variables';
+
+
+.wrapper{
+	width: 1205px;
+	margin: 0 auto;
+}
+
+
+
+
+.owl-prev svg{
+	width: 21px;
+	height: 12px;
+	transform: rotate(270deg);
+	position: absolute;
+	left: 21px;
+	top: 48%;
+
+}
+.owl-prev svg use{
+	fill: #cccccc;
+}
+
+
+.owl-next svg{
+	width: 21px;
+	height: 12px;
+	transform: rotate(90deg);
+	right: 21px;
+	position: absolute;
+	top: 48%;
+
+}
+.owl-next svg use{
+	fill: #cccccc;
+}
+
+.slider{
+	width: 100%;
+	position: relative;
+	font-size: 0;
+
+	&__image svg{
+		width: 60px;
+		height: 60px;
+
+		
+	}
+	&__image svg use{
+		fill: $blue-color;
+	}
+	&__image{
+		display: inline-block;
+		float: left;
+
+
+	}
+	&__first{
+		padding: 70px 0 70px;
+		.slider__image{
+			margin-left: 30px;
+		}
+
+	}
+	&__second{
+		padding: 100px 0 130px;
+	}
+	&__image_border{
+		border: 3px solid #95e1d3;
+		padding: 40px;
+	}
+	&__text{
+		width: 767px;
+		color: $grey-color;
+		font-family: $roboto;
+		font-size: 22px;
+		padding-top: 5px;
+		font-weight: 300;
+		font-style: italic;
+		line-height: 32px;
+		margin-left: 61px;
+	}
+	&__text-block{
+		display: inline-block;
+
+	}
+	&__item{
+		padding: 0 83px;
+	}
+	&__author{
+		
+		color: $dark-font-color;
+		font-family: $kaushan;
+		font-size: 24px;
+		font-weight: 400;
+		position: relative;
+		margin-left: 61px;
+		margin-top: 26px;
+		padding-left: 69px;
+		&:before{
+			content: "";
+			background-color: $red-color;
+			width: 60px;
+			height: 3px;
+			position: absolute;
+			left: 0;
+			bottom: 9px;
+		}
+	}
+}
+.slider-container{
+	background-color: #f8f8f8;
+}
+
+.visible-menu{
+	display: block !important;
+}
+
+
+
+

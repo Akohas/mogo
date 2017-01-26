@@ -1,0 +1,200 @@
+
+.footer{
+	padding-bottom: 70px;
+	@include clearfix();
+	background-color: #f8f8f8;
+	&__subscribe{
+		float: left;
+	}
+	&__blogs{
+		float: left;
+	}
+	&__instagram{
+		float: left;
+	}
+	padding-top: 73px;
+}
+
+
+
+.subscribe-block{
+	width: 480px;
+	&__logo{
+
+	
+		font-family: $montserrat;
+		font-size: 46px;
+		font-weight: 700;
+		margin-bottom: 41px;
+	}	
+	&__logo a{
+		text-decoration: none;
+			color: #cccccc;
+	}
+	&__text{
+		color: $grey-color;
+		font-family: $roboto;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 24px;
+		margin-bottom: 50px;
+	}
+	&__folowers{
+		border-bottom: solid $grey-color 1px;
+		color: $dark-font-color;
+		font-family: $montserrat;
+		padding-bottom: 18px;
+		font-size: 14px;
+		font-weight: 400;
+	}
+	&__folowers-num{
+		font-size: 18px;
+		font-weight: 700;
+		display: inline-block;
+		margin-right: 5px;
+	}
+	&__networks svg{
+		vertical-align: middle;
+		width: 16px;
+		height: 16px;
+	}
+
+	&__networks a{
+		display: inline-block;
+		margin-left: 16px;
+		&:first-child{
+			margin-left: 23px;
+		}
+	}
+	&__networks svg use {
+		fill:$blue-color;
+	}
+	&__networks{
+		margin-top: 16px;
+
+		color: $grey-color;
+		font-family: $roboto;
+		font-size: 15px;
+		font-weight: 300;
+		font-style: italic;
+	}
+	&__email{
+		margin-top: 38px;
+	}
+	&__email-field{
+		width: 230px;
+		height: 40px;
+		padding: 14px;
+		margin: 0;
+		float: left;
+		color: $dark-font-color;
+		font-family: $roboto;
+		font-size: 16px;
+		font-weight: 400;
+		border: 1px solid #e7e7e7;
+		border-right: none;
+	}
+	&__email-button{
+		width: 150px;
+		height: 40px;
+		background-color: $blue-color;
+		padding: 14px 0 14px;
+		text-align: center;
+		color: #ffffff;
+		font-family: $montserrat;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		border: none;
+		float: left;
+	}
+}
+
+
+.blogs-block{
+	margin-left: 30px;
+	padding-top: 12px;
+	&__item{
+		@include clearfix();
+		margin-top: 30px;
+		&:first-child{
+			margin-top: 0;
+		}
+		text-decoration: none;
+		display: block;
+	}
+	&__header{
+		margin-bottom: 40px;
+		color: $dark-font-color;
+		font-family: $montserrat;
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	&__img{
+		float: left;
+		margin-right: 20px;
+		
+	}
+
+	&__desc{
+
+	color: $dark-font-color;
+	font-family: $montserrat;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+	text-transform: uppercase;
+	padding-top: 18px;
+	}
+	&__date{
+
+	color: $grey-color;
+	font-family: $roboto;
+	font-size: 13px;
+	font-weight: 300;
+	font-style: italic;
+	line-height: 24px;
+	}
+}
+
+
+
+.instagram-block{
+	padding-top: 12px;
+	&__header{
+		margin-bottom: 40px;
+		color: $dark-font-color;
+		font-family: $montserrat;
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	&__photo{
+		
+		float: left;
+		margin-top: 2px;
+		margin-right: 2px;
+		&:nth-child(-n + 3){
+			margin-top: 0;
+		}
+		&:nth-child(3n){
+			margin-right: 0;
+		}
+	}
+	&__photos{
+		margin-bottom: 20px;
+		width: 268px;
+		@include clearfix();
+		font-size: 0;
+	}
+
+	&__view-more{
+		text-decoration: none;
+		color: $grey-color;
+		font-family: $roboto;
+		font-size: 13px;
+		font-weight: 300;
+		font-style: italic;
+	}
+}
