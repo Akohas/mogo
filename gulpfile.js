@@ -8,7 +8,12 @@
       source = require('vinyl-source-stream'),
       browserify = require('browserify'),
       svgSprite = require('gulp-svg-sprite'),
-      svgmin = require('gulp-svgmin');
+      svgmin = require('gulp-svgmin'),
+      spriteConfig = {
+        mode: {
+            symbol: true
+        }
+      };
 
 gulp.task('jade', function(){
   gulp.src('./views/jade/**/*.jade')
@@ -68,16 +73,12 @@ gulp.task('watchify', function() {
 
 });
  
-config = {
-  mode: {
-      symbol: true
-  }
-}
+
 
  gulp.task('svg-sprites', function(){
   gulp.src('./icons/*.svg')
     .pipe(svgmin())
-    .pipe(svgSprite(config))
+    .pipe(svgSprite(spriteConfig))
     .pipe(gulp.dest('./sprites'));
  });
 

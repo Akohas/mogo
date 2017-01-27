@@ -1,0 +1,18 @@
+
+
+.work-block{
+	padding-top: 109px;
+	font-size: 0;
+	&__colomn{
+		width: 25%;
+		height: auto;
+		display: inline-block;
+	}
+	&__pics{
+		margin-top: 95px;
+	}
+	&__picture{
+		width: 100%;
+	}
+}
+

@@ -1,0 +1,37 @@
+.control-numbers{
+	margin-top: 106px;
+	background-color: $blue-color;
+	font-size: 0;
+	@include clearfix();
+	&__item{
+		height: 270px;
+		float: left;
+		width: 240px;
+		border-left: solid 1px #b4eae0;
+		border-right: solid 1px #b4eae0;
+		padding-top: 72px;
+
+
+	}
+	&__number{
+		color: #ffffff;
+		font-family: $montserrat;
+		font-size: 72px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 9px;
+	}
+	&__text{
+		color: #ffffff;
+		font-family: $montserrat;
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	&__text-block{
+		width: 100%;
+		text-align: center;
+	
+	}
+}
+

@@ -1,0 +1,78 @@
+
+.service-what{
+	@include clearfix();
+	padding-top: 48px;
+	padding-bottom: 114px;
+	&__image{
+		float: left;
+	}
+	&__desc{
+		margin-bottom: 91px;
+	}
+}
+.service-menu{
+	&__svg{
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	&__svg use{
+		fill: $blue-color;
+	}
+	&__arrow-top{
+		transform: rotate(0deg) !important;
+	}
+	&__arrow{
+		width: 21px;
+		height: 12px;
+		margin-top:  8px;
+		transform: rotate(180deg);	
+		float: right;
+	}
+	&__arrow use{
+		fill: #cccccc;
+	}
+	&__header{
+		display: inline-block;
+		color: $dark-font-color;
+		font-family: $montserrat;
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: uppercase;
+		vertical-align: middle;
+		margin-left: 15px;
+	}
+	&__label{
+		border: 1px solid #e5e5e5;
+		width: 600px;
+		height: 60px;
+		padding: 15px;
+		font-size: 0;
+		cursor: pointer;
+	}
+	&__hidden{
+		border: 1px solid #e5e5e5;
+		border-top: none;
+		width: 600px;
+		color: $grey-color;
+		font-family: $roboto;
+		font-size: 15px;
+		font-weight: 300;
+		font-style: italic;
+		line-height: 24px;
+		padding: 14px 18px 20px;
+		display: none;
+
+
+	}
+	&__item{
+		float: left;
+		margin-left: 31px;
+		transition: 0.3s;
+		margin-top: 10px;
+		&:first-child{
+			margin-top: 0;
+		}
+	}
+}

@@ -1,0 +1,44 @@
+
+.map{
+
+	padding: 50px 0 49px;
+	background: 
+			linear-gradient(rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%),		
+			url(../../img/map.png);
+	&__svg{
+		width: 20px;
+		height: 26px;
+	}
+	&__svg use{
+		fill: $red-color;
+	}
+	&__text{
+		margin-top: 14px;
+		color: $red-color;
+		font-family: $montserrat;
+		font-size: 24px;
+		font-weight: 700;
+		text-transform: uppercase;
+		position: relative;
+		padding-bottom: 20px;
+
+		&:after{
+			content: "";
+			width: 60px;
+			height: 3px;
+			background-color: $red-color;
+			position: absolute;
+			bottom: -0px;
+			left: calc(50% - 30px);
+		}
+
+	}
+	&__label{
+		text-decoration: none;
+		text-align: center;
+		display: block;
+		
+	}
+
+}
+
