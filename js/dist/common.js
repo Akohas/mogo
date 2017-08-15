@@ -30,7 +30,10 @@ $(document).ready(function(){
 		}
 				
 	});
-
+  $('.header__nav-icon').on('click', function(){
+    $('.header__nav').toggleClass('header__nav_open')
+    $(this).toggleClass('header__nav-icon_active')
+  })
 
 });
 

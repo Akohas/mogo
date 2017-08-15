@@ -9,6 +9,6 @@ module.exports = function(){
 			$('.service-menu__hidden').removeClass('visible-menu');
 			$(this).children('.service-menu__hidden').addClass('visible-menu');
 		}
-				
+
 	});
 }
